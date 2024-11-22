@@ -1,14 +1,22 @@
-footer {
-    background-color: #333; /* Warna latar belakang footer */
-    color: #fff; /* Warna teks footer */
-    text-align: center; /* Teks di tengah */
-    padding: 20px 0; /* Jarak atas dan bawah */
-    position: relative; /* Mengatur posisi relatif */
-    bottom: 0; /* Menempatkan footer di bagian bawah */
-    width: 100%; /* Lebar penuh */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-.footer p {
-    margin: 0; /* Menghapus margin default */
-    font-size: 14px; /* Ukuran font */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
 }
