@@ -70,6 +70,10 @@ body {
 
 .navbar .navbar-extra a {
     color: aqua;
-    margin: 0 0,5rem;
-    
+    margin: 0 0,5rem; 
 }
+
+.navbar .navbar-extra a:hover {
+    color: aqua;
+}
+
