@@ -1,97 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-eqiv="x-ua-compatible"content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> rumahmakankucingberanak</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Pw.jpg" type="image/jpg">
+    <title>rumah makan kucing beranak</title>
+
+
+    <!--fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- feather icons -->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+<!-- my style -->
+    <link rel="stylesheet"href="css/style.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">rumahmakankucingberanak</div>
-        <nav>
-            <ul>
-                <li><a href="https://maps.app.goo.gl/Aj4wuZXBax6n4K1s9">Maps</a></li>
-                <li><a href="#testimoni">Testimoni</a></li>
-                <li><a href="#Hubungi kami">Hubungi Kami</a></li>
-              <li><a href="https://maps.app.goo.gl/Aj4wuZXBax6n4K1s9">Maps</a></li
-              <li><a href="#testimoni">Testimoni</a></li>
-              <li><a href="#Hubungi kami">Hubungi Kami</a></li>
-            </ul>
-        </nav>
-        <button class="cta" onclick="scrollToSection('https://wa.me/082283462803')">Pesan Sekarang</button>
-    </header>
-    <!-- Hero Section -->
-    <section id="beranda" class="hero">
-        <h1>Selamat Datang di rumahmakankucingberanak</h1>
-        <p>makanan di sini lebih enak,ramah dikantong dan cocok nih buat makan bareng sama keluarga...!</p>
-    </section>
-    <!-- Tentang Kami -->
-    <section id="tentang">
-        <h2>Tentang Kami</h2>
-        <p>Kami menyediakan catering terbaik dengan berbagai menu </p>
-    </section>
-    <!-- Daftar Game -->
-    <section id="game">
-        <h2>Daftar makan </h2>
-        <div class="makan-list">
-            <div class="makan-item">
-                <div class="slideshow-container">
-                    <div class="slide">
-                      <img src="WhatsApp Image 2024-11-19 at 21.36.05.jpeg"slide-image">
-                      <p class="caption">dendeng lambok.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="WhatsApp Image 2024-11-19 at 21.36.21.jpeg" alt="Image 2" class="slide-image">
-                      <p class="caption">ayam rendang.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="WhatsApp Image 2024-11-19 at 21.36.32.jpeg" alt="Image 3" class="slide-image">
-                      <p class="caption">ikan goreng sambal ijo .</p>
-                    </div>
-                    <div class="slide">
-                      <img src="WhatsApp Image 2024-11-19 at 21.36.50.jpeg" alt="Image 4" class="slide-image">
-                      <p class="caption">gule ikan karang.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="WhatsApp Image 2024-11-19 at 21.37.12.jpeg" alt="Image 5" class="slide-image">
-                      <p class="caption">gule ikan .</p>
-                    </div>
-                    <div class="slide">
-                      <img src="WhatsApp Image 2024-11-19 at 21.37.57.jpeg" alt="Image 6" class="slide-image">
-                      <p class="caption">ayam kecap.</p>
-                    </div>
-                  </div>
-                            
-                  <script src="script.js"></script>
-    <!-- Testimoni -->
-    <section id="testimoni">
-        <h2>Testimoni</h2>
-        <blockquote>
-            "Layanannya sangat memuaskan! makannya lengkap dan pelayanan bagus!" - Pelanggan A
-        </blockquote>
-    </section>
-    <!-- Kontak -->
-    <section id="kontak">
-        <h2>Hubungi Kami</h2>
-        <form>
-            <label for="name">Nama</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Pesan</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 rumahmakankucingberanak. Semua Hak Dilindungi.</p>
-    </footer>
-    <!-- JavaScript -->
-    <script src="scripts.js"></script>
+
+    <!-- navbar start -->
+     <nav class="navbar">
+        <a href="#"class="navbar-logo">rumah<span>makankb</span>.</a>
+
+        <div class="navbar-nav">
+            <a href="#home">home</a>
+            <a href="#about">tentang kami</a>
+            <a href="#menu">menu</a>
+            <a href="#contact">kontak</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+     </nav>
+    <!-- navbar end -->
+    
+    <!-- hero section start -->
+     <section class="hero" id="home">
+        <main class="content">
+            <h1>ayuk nikmati <span>makanan di sini</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, illo.</p>
+            <a href="#" class="cta">beli sekarang</a>
+        </main>
+     </section>
+    <!-- hero section end -->
+
+    <!-- feather icons -->
+     <script>
+      feather.replace();
+    </script>
+
+    <!-- my javascrip -->
+     <script src="js/script.js"></script>
 </body>
 </html>
+
