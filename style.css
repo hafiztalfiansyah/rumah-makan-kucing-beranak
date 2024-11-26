@@ -60,5 +60,16 @@ body {
     display: block;
     padding-bottom: 0.5rem;
     border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: aqua;
+    margin: 0 0,5rem;
     
 }
