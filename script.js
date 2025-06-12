@@ -1,31 +1,25 @@
-// Hamburger Menu Toggle
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const navbarNav = document.querySelector('.navbar-nav');
+package com.perpustakaan;
 
-// Fungsi untuk menampilkan atau menyembunyikan menu navbar
-hamburgerMenu.addEventListener('click', () => {
-    navbarNav.classList.toggle('active');
-});
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 
-// Pencarian Toggle
-const searchIcon = document.getElementById('search');
-const searchInput = document.createElement('input');
-searchInput.type = 'text';
-searchInput.placeholder = 'Cari...';
-searchInput.id = 'search-input';
+public class BukuServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-// Menampilkan input pencarian ketika ikon search diklik
-searchIcon.addEventListener('click', () => {
-    if (!document.getElementById('search-input')) {
-        searchIcon.appendChild(searchInput);  // Menambahkan input ke dalam icon pencarian
-        searchInput.focus();
-    } else {
-        searchInput.remove();  // Menghapus input pencarian jika sudah ada
+        String judul = request.getParameter("judul");
+        String penulis = request.getParameter("penulis");
+
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+
+        out.println("<html><body>");
+        out.println("<h2>Buku berhasil ditambahkan!</h2>");
+        out.println("<p>Judul: " + judul + "</p>");
+        out.println("<p>Penulis: " + penulis + "</p>");
+        out.println("<a href='index.html'>Kembali</a>");
+        out.println("</body></html>");
     }
-});
+}
 
-// Shopping Cart Toggle (Contoh)
-const shoppingCartIcon = document.getElementById('shopping-cart');
-shoppingCartIcon.addEventListener('click', () => {
-    alert("Fitur keranjang belanja belum diimplementasikan.");
-});
